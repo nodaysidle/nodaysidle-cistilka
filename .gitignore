@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+*.xcodeproj
+Config/OAuth.plist
+DerivedData/
+*.app
+*.dmg
+dist/
+.dmg-staging/
+Icon.iconset/
+.superpowers/
+*.swp
+xcuserdata/

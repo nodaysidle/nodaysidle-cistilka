@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>Cistilka</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.nodaysidle.cistilka</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Cistilka</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>LSUIElement</key>
+    <false/>
+    <!-- Shown if the system prompts for local-network (SSH to LAN hosts). Non-sandbox v1. -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Cistilka connects over the local network when you scan SSH/SFTP paths on devices in your LAN.</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+    </dict>
+    <!-- Custom URL schemes for Google / Microsoft OAuth redirects via ASWebAuthenticationSession.
+         Google: com.nodaysidle.cistilka (GoogleRedirectURI).
+         Microsoft: msauth.com.nodaysidle.cistilka (MicrosoftRedirectURI, e.g. msauth.com.nodaysidle.cistilka://auth).
+         package_app.sh also injects CFBundleURLTypes into the packaged app Info.plist. -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.nodaysidle.cistilka.oauth</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.nodaysidle.cistilka</string>
+                <string>msauth.com.nodaysidle.cistilka</string>
+            </array>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+        </dict>
+    </array>
+</dict>
+</plist>

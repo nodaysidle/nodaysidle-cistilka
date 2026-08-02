@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Desktop clients: use reverse Client ID scheme (recommended).
+	     Client ID 123-abc.apps.googleusercontent.com →
+	     redirect com.googleusercontent.apps.123-abc:/oauth2redirect/google
+	     Also register that scheme in Info.plist / package_app.sh. -->
+	<key>GoogleClientID</key>
+	<string>YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com</string>
+	<key>GoogleRedirectURI</key>
+	<string>com.googleusercontent.apps.YOUR_CLIENT_ID_PREFIX:/oauth2redirect/google</string>
+	<key>MicrosoftClientID</key>
+	<string>YOUR_MICROSOFT_APPLICATION_CLIENT_ID</string>
+	<key>MicrosoftRedirectURI</key>
+	<string>msauth.com.nodaysidle.cistilka://auth</string>
+</dict>
+</plist>
